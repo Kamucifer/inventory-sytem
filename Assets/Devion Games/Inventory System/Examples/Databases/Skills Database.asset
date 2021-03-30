@@ -35,7 +35,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
@@ -155,7 +154,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
@@ -363,7 +361,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
@@ -407,7 +404,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
@@ -518,7 +514,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
@@ -562,7 +557,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 5
@@ -607,7 +601,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
@@ -651,7 +644,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
@@ -711,7 +703,6 @@ MonoBehaviour:
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_CraftingRecipe: {fileID: 0}
-  m_EnchantingRecipe: {fileID: 0}
   properties: []
   m_UseCategoryCooldown: 1
   m_Cooldown: 1

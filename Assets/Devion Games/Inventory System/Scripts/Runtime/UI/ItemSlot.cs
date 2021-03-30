@@ -41,22 +41,10 @@ namespace DevionGames.InventorySystem
         [SerializeField]
         protected ItemContainer m_Ingredients;
         /// <summary>
-        /// Item container that will show enchanting materials of the item
-        /// </summary>
-        [SerializeField]
-        protected ItemContainer m_EnchantingMaterials;
-        /// <summary>
         /// Item container that will show the buy price of item.
         /// </summary>
         [SerializeField]
         protected ItemContainer m_BuyPrice;
-        /// <summary>
-        /// StringPairSlot prefab to display a string - string pair 
-        /// </summary>
-        [SerializeField]
-        protected StringPairSlot m_SlotPrefab;
-
-        protected List<StringPairSlot> m_SlotCache= new List<StringPairSlot>();
 
         private bool m_IsCooldown;
         /// <summary>
@@ -99,7 +87,6 @@ namespace DevionGames.InventorySystem
         protected override void Start()
         {
             base.Start();
-
             if (this.m_CooldownOverlay != null)
                 this.m_CooldownOverlay.raycastTarget = false;
 
@@ -148,48 +135,6 @@ namespace DevionGames.InventorySystem
                 }
             }
 
-            if (this.m_EnchantingMaterials != null)
-            {
-                this.m_EnchantingMaterials.RemoveItems();
-                if (!IsEmpty && ObservedItem.EnchantingRecipe != null)
-                {
-                    for (int i = 0; i < ObservedItem.EnchantingRecipe.Ingredients.Count; i++)
-                    {
-                        Item ingredient = Instantiate(ObservedItem.EnchantingRecipe.Ingredients[i].item);
-                        ingredient.Stack = ObservedItem.EnchantingRecipe.Ingredients[i].amount;
-                        this.m_EnchantingMaterials.StackOrAdd(ingredient);
-                    }
-                }
-            }
-
-            if (this.m_SlotPrefab != null)
-            {
-                for (int i = 0; i < this.m_SlotCache.Count; i++)
-                {
-                    this.m_SlotCache[i].gameObject.SetActive(false);
-                }
-                if (!IsEmpty)
-                {
-                    List<KeyValuePair<string, string>> pairs = ObservedItem.GetPropertyInfo();
-
-                    if (pairs != null && pairs.Count > 0)
-                    {
-                        while (pairs.Count > this.m_SlotCache.Count)
-                        {
-                            CreateSlot();
-                        }
-
-                        for (int i = 0; i < pairs.Count; i++)
-                        {
-                            StringPairSlot slot = this.m_SlotCache[i];
-                            slot.gameObject.SetActive(true);
-                            slot.Target = pairs[i];
-                        }
-                        this.m_SlotPrefab.transform.parent.gameObject.SetActive(true);
-                    }
-                }
-            }
-
             if (this.m_BuyPrice != null)
             {
                 this.m_BuyPrice.RemoveItems();
@@ -198,6 +143,7 @@ namespace DevionGames.InventorySystem
                     Currency price = Instantiate(ObservedItem.BuyCurrency);
                     price.Stack = Mathf.RoundToInt(ObservedItem.BuyPrice);
                     this.m_BuyPrice.StackOrAdd(price);
+                    //Debug.Log(" Price Update for "+ObservedItem.Name+" "+price.Name+" "+price.Stack);
                 }
             }
         }
@@ -318,17 +264,6 @@ namespace DevionGames.InventorySystem
                     }
 
                     menu.AddMenuItem("Drop", DropItem);
-
-                    if (ObservedItem.EnchantingRecipe != null)
-                    {
-                        menu.AddMenuItem("Enchant", delegate () { 
-                            ItemContainer container = WidgetUtility.Find<ItemContainer>("Enchanting");
-                            container.Show();
-
-                            container.ReplaceItem(0,ObservedItem);
-
-                        });
-                    }
 
                     if(ObservedItem.CanDestroy)
                         menu.AddMenuItem("Destroy", DestroyItem);
@@ -574,22 +509,6 @@ namespace DevionGames.InventorySystem
         public override bool CanUse()
         {
             return !IsCooldown && ObservedItem != null;
-        }
-
-        protected virtual StringPairSlot CreateSlot()
-        {
-            if (this.m_SlotPrefab != null)
-            {
-                GameObject go = (GameObject)Instantiate(this.m_SlotPrefab.gameObject);
-                go.SetActive(true);
-                go.transform.SetParent(this.m_SlotPrefab.transform.parent, false);
-                StringPairSlot slot = go.GetComponent<StringPairSlot>();
-                this.m_SlotCache.Add(slot);
-
-                return slot;
-            }
-            Debug.LogWarning("[ItemSlot] Please ensure that the slot prefab is set in the inspector.");
-            return null;
         }
 
         public class DragObject {
