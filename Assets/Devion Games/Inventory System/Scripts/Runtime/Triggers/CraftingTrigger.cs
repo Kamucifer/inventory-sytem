@@ -55,7 +55,6 @@ namespace DevionGames.InventorySystem
             handler.OnCraftStop(item, player);
         }
 
-<<<<<<< HEAD
         protected ItemContainer m_ResultStorageContainer;
         protected ItemContainer m_RequiredIngredientsContainer;
         protected bool m_IsCrafting;
@@ -63,17 +62,6 @@ namespace DevionGames.InventorySystem
         protected float m_ProgressInitTime;
         protected Progressbar m_Progressbar;
         protected Spinner m_AmountSpinner;
-=======
-        private ItemContainer m_ResultStorageContainer;
-        private ItemContainer m_RequiredIngredientsContainer;
-        private bool m_IsCrafting;
-        private float m_ProgressDuration;
-        private float m_ProgressInitTime;
-        private Progressbar m_Progressbar;
-        private Spinner m_AmountSpinner;
-
-        private Coroutine coroutine;
->>>>>>> parent of 95e898c (Fixed Alchemy)
 
         protected override void Start()
         {
@@ -81,6 +69,12 @@ namespace DevionGames.InventorySystem
             this.m_ResultStorageContainer = WidgetUtility.Find<ItemContainer>(this.m_StorageWindow);
             this.m_RequiredIngredientsContainer = WidgetUtility.Find<ItemContainer>(this.m_IngredientsWindow);
             this.m_Progressbar = WidgetUtility.Find<Progressbar>(this.m_CraftingProgressbar);
+
+            ItemContainer container = GetComponent<ItemContainer>();
+            if (container != null) {
+                container.RegisterListener("OnShow", (CallbackEventData ev) => { InUse = true;  });
+                container.RegisterListener("OnClose", (CallbackEventData ev) => { InUse = false; });
+            }
         }
 
         public override bool OverrideUse(Slot slot, Item item)
@@ -161,12 +155,7 @@ namespace DevionGames.InventorySystem
                     animator.CrossFadeInFixedTime(Animator.StringToHash(recipe.AnimatorState), 0.2f);
 
             }
-<<<<<<< HEAD
             StartCoroutine(CraftItems(item, amount));
-=======
-            //this.m_RequiredIngredientsContainer.Lock(true);
-           coroutine= StartCoroutine(CraftItems(item, amount));
->>>>>>> parent of 95e898c (Fixed Alchemy)
             ExecuteEvent<ITriggerCraftStart>(Execute, item);
         }
 
