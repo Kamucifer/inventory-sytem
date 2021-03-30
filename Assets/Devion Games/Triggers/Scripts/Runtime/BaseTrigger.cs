@@ -68,6 +68,7 @@ namespace DevionGames
                     }else{
                         NotifyWentOutOfRange();
                     }
+                    Debug.Log(name+" "+value);
                 }
             }
         }

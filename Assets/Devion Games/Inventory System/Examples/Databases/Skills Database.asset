@@ -63,10 +63,8 @@ MonoBehaviour:
   - {fileID: 7032449652308580212}
   - {fileID: 5770177478895120047}
   - {fileID: -2308325603847997442}
-  - {fileID: 9165992345120903733}
-  m_Amounts: 0100000001000000010000000100000001000000
+  m_Amounts: 01000000010000000100000001000000
   m_Modifiers:
-  - modifiers: []
   - modifiers: []
   - modifiers: []
   - modifiers: []
@@ -438,7 +436,6 @@ MonoBehaviour:
   - {fileID: -904524929377059290}
   - {fileID: -2308325603847997442}
   - {fileID: 5770177478895120047}
-  - {fileID: 9165992345120903733}
   currencies: []
   craftingRecipes: []
   raritys: []
@@ -677,6 +674,7 @@ MonoBehaviour:
   name: None
   m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
   m_Cooldown: 1
+<<<<<<< HEAD
 --- !u!114 &9165992345120903733
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -721,3 +719,5 @@ MonoBehaviour:
   m_GainModifier: {fileID: 11400000, guid: 008ca9312f640ab42bc1de739c2d0a78, type: 2}
   references:
     version: 1
+=======
+>>>>>>> parent of 95e898c (Fixed Alchemy)

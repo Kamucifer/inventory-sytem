@@ -6237,7 +6237,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: -0.0000019851923}
+=======
+  m_AnchoredPosition: {x: 0, y: -0.000020331188}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &87677221
@@ -6931,21 +6935,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: OnClose
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2120413501}
-          m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   name: Skill Vendor
   priority: 0
   m_KeyCode: 0
@@ -6958,7 +6947,7 @@ MonoBehaviour:
   m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
-  m_CloseOnMove: 0
+  m_CloseOnMove: 1
   m_FocusPlayer: 0
   useButton: 3
   m_DynamicContainer: 1
@@ -14170,7 +14159,7 @@ MonoBehaviour:
   m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
-  m_CloseOnMove: 0
+  m_CloseOnMove: 1
   m_FocusPlayer: 0
   useButton: 3
   m_DynamicContainer: 0
@@ -31395,7 +31384,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -0.0000041861, y: 0.000062143474}
+=======
+  m_AnchoredPosition: {x: -0.0000041861, y: 0.00017017497}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: -0.000015259, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &529287258
@@ -40786,7 +40779,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -0.0000041861, y: 0.000031642132}
+=======
+  m_AnchoredPosition: {x: -0.0000041861, y: 0.00030779216}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: -0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &681275146
@@ -41136,21 +41133,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: OnClose
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 303156720}
-          m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   name: Vendor
   priority: 0
   m_KeyCode: 0
@@ -41163,7 +41145,7 @@ MonoBehaviour:
   m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
-  m_CloseOnMove: 0
+  m_CloseOnMove: 1
   m_FocusPlayer: 0
   useButton: 3
   m_DynamicContainer: 1
@@ -43654,7 +43636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1408539672}
   m_Horizontal: 0
-  m_Vertical: 1
+  m_Vertical: 0
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
@@ -50683,7 +50665,7 @@ MonoBehaviour:
   m_ShowSound: {fileID: 0}
   m_CloseSound: {fileID: 0}
   m_Focus: 1
-  m_DeactivateOnClose: 0
+  m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 0
   m_CameraPreset: UI
   m_CloseOnMove: 1
@@ -50732,9 +50714,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867565456}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!224 &867565460
 RectTransform:
@@ -53139,7 +53121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 965443295}
   m_HandleRect: {fileID: 965443294}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -55024,7 +55006,7 @@ MonoBehaviour:
   m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
-  m_CloseOnMove: 0
+  m_CloseOnMove: 1
   m_FocusPlayer: 0
   useButton: -1
   m_DynamicContainer: 1
@@ -56304,7 +56286,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 0.00012526268}
+=======
+  m_AnchoredPosition: {x: 0, y: 0.0002793635}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &959109046
@@ -57802,7 +57788,7 @@ MonoBehaviour:
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
   m_CloseOnMove: 1
-  m_FocusPlayer: 0
+  m_FocusPlayer: 1
   useButton: 2
   m_DynamicContainer: 1
   m_SlotParent: {fileID: 1950240566}
@@ -62199,21 +62185,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: OnClose
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 303156720}
-          m_MethodName: Close
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
   name: Bank
   priority: 0
   m_KeyCode: 0
@@ -62226,7 +62197,7 @@ MonoBehaviour:
   m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
-  m_CloseOnMove: 0
+  m_CloseOnMove: 1
   m_FocusPlayer: 0
   useButton: -1
   m_DynamicContainer: 0
@@ -63452,7 +63423,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -0.0000041861, y: -0.0000065945233}
+=======
+  m_AnchoredPosition: {x: -0.0000041861, y: 0.00009812715}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: -0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1079224612
@@ -64949,7 +64924,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1886123451}
   m_HandleRect: {fileID: 1886123450}
   m_Direction: 3
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -65027,7 +65002,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -0.0000041861, y: -0.000041382023}
+=======
+  m_AnchoredPosition: {x: -0.0000041861, y: -0.00008132787}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1111451588
@@ -74456,7 +74435,6 @@ MonoBehaviour:
   actionTemplate: {fileID: 0}
   actions:
   - id: 0
-  - id: 1
   m_Interruptable: 1
   m_IngredientsWindow: Inventory
   m_StorageWindow: Inventory
@@ -75882,13 +75860,21 @@ MonoBehaviour:
   triggerType: 0
   key: 288
   actionTemplate: {fileID: 0}
-  actions: []
+  actions:
+  - id: 0
   m_Interruptable: 1
   m_IngredientsWindow: Inventory
   m_StorageWindow: Inventory
   m_CraftingProgressbar: AlchemyProgress
   references:
     version: 1
+    00000000:
+      type: {class: ShowWindow, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.ShowWindow
+        m_Enabled: 1
+        m_WindowName: Alchemy
+        m_DestroyWhenEmpty: 0
 --- !u!114 &1295125760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75901,7 +75887,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb22b138ec68f14884edf560442aaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delegates: []
+  delegates:
+  - eventID: OnShow
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1295125759}
+          m_MethodName: StartUse
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   name: Alchemy
   priority: 0
   m_KeyCode: 0
@@ -75911,7 +75912,7 @@ MonoBehaviour:
   m_ShowSound: {fileID: 8300000, guid: b8b48c4d6a98902478cd81dc8e386cee, type: 3}
   m_CloseSound: {fileID: 8300000, guid: b8b48c4d6a98902478cd81dc8e386cee, type: 3}
   m_Focus: 1
-  m_DeactivateOnClose: 1
+  m_DeactivateOnClose: 0
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
   m_CloseOnMove: 1
@@ -82332,7 +82333,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 0.000055835666}
+=======
+  m_AnchoredPosition: {x: 0, y: -0.0000333786}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: 0.002532959, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1408539673
@@ -84751,7 +84756,7 @@ GameObject:
   - component: {fileID: 1438347893}
   - component: {fileID: 1437216949}
   - component: {fileID: 1441400437}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95740,7 +95745,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: -0.0000019851923}
+=======
+  m_AnchoredPosition: {x: 0, y: -0.000020331188}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1611400918
@@ -99906,7 +99915,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb22b138ec68f14884edf560442aaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delegates: []
+  delegates:
+  - eventID: OnTryUseItem
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1295125759}
+          m_MethodName: StartUse
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   name: Alchemy Selection
   priority: 0
   m_KeyCode: 0
@@ -99916,7 +99940,7 @@ MonoBehaviour:
   m_ShowSound: {fileID: 0}
   m_CloseSound: {fileID: 0}
   m_Focus: 1
-  m_DeactivateOnClose: 0
+  m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 0
   m_CameraPreset: UI
   m_CloseOnMove: 1
@@ -99946,9 +99970,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671851563}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &1672687281
 GameObject:
@@ -101878,7 +101902,7 @@ MonoBehaviour:
   m_ShowSound: {fileID: 0}
   m_CloseSound: {fileID: 0}
   m_Focus: 1
-  m_DeactivateOnClose: 0
+  m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 0
   m_CameraPreset: UI
   m_CloseOnMove: 1
@@ -101927,9 +101951,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697594385}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!224 &1697594389
 RectTransform:
@@ -106391,7 +106415,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -0.0000041861, y: 0.00012505309}
+=======
+  m_AnchoredPosition: {x: -0.0000041861, y: -0.00006074665}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: -0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1780176398
@@ -117461,7 +117489,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: 0.000071019946}
+=======
+  m_AnchoredPosition: {x: 0, y: 0.00028180642}
+>>>>>>> parent of 95e898c (Fixed Alchemy)
   m_SizeDelta: {x: 0.002532959, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1950240567
@@ -120292,7 +120324,7 @@ MonoBehaviour:
   m_ShowSound: {fileID: 0}
   m_CloseSound: {fileID: 0}
   m_Focus: 1
-  m_DeactivateOnClose: 0
+  m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 0
   m_CameraPreset: UI
   m_CloseOnMove: 1
@@ -120322,9 +120354,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984027651}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!4 &1984585447 stripped
 Transform:
@@ -128298,8 +128330,8 @@ MonoBehaviour:
   m_DeactivateOnClose: 1
   m_ShowAndHideCursor: 1
   m_CameraPreset: UI
-  m_CloseOnMove: 0
-  m_FocusPlayer: 0
+  m_CloseOnMove: 1
+  m_FocusPlayer: 1
   useButton: 0
   m_DynamicContainer: 1
   m_SlotParent: {fileID: 1408539672}
