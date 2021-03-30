@@ -32,7 +32,7 @@ namespace DevionGames.InventorySystem
         {
             this.m_Database = AssetDatabase.LoadAssetAtPath<ItemDatabase>(EditorPrefs.GetString("ItemDatabasePath"));
             if (this.m_Database == null) {
-                string[] guids = AssetDatabase.FindAssets("t:" + typeof(ItemDatabase).FullName);
+                string[] guids = AssetDatabase.FindAssets("t:ItemDatabase");
                 if (guids.Length > 0)
                 {
                     string path = AssetDatabase.GUIDToAssetPath(guids[0]);
